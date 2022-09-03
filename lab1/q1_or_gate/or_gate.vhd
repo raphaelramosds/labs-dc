@@ -1,3 +1,4 @@
+-- Entidade
 entity or_gate is
 	port (
 		a	: in bit;
