@@ -1,0 +1,27 @@
+|properties
+a => i03.DATAIN
+a => i01.DATAIN
+a => i02.DATAIN
+b => ~NO_FANOUT~
+c => ~NO_FANOUT~
+i01 <= a.DB_MAX_OUTPUT_PORT_TYPE
+i02 <= a.DB_MAX_OUTPUT_PORT_TYPE
+i03 <= a.DB_MAX_OUTPUT_PORT_TYPE
+c11 <= <GND>
+c12 <= <GND>
+c21 <= <GND>
+c22 <= <GND>
+a11 <= <GND>
+a12 <= <GND>
+a21 <= <GND>
+a22 <= <GND>
+d11 <= <GND>
+d12 <= <GND>
+d21 <= <GND>
+d22 <= <GND>
+m11 <= <GND>
+m12 <= <GND>
+m21 <= <GND>
+m22 <= <GND>
+
+

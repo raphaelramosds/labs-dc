@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/rapha/Documents/Dev/ufrn/labs_cd/lab1/q2_and_gate/and_gate.vhd
+source_file = 1, C:/Users/rapha/Documents/Dev/ufrn/labs_cd/lab1/q2_and_gate/Waveform.vwf
+source_file = 1, C:/Users/rapha/Documents/Dev/ufrn/labs_cd/lab1/q2_and_gate/db/and_gate.cbx.xml
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = and_gate
+instance = comp, \s~output , s~output, and_gate, 1
+instance = comp, \a~input , a~input, and_gate, 1
+instance = comp, \b~input , b~input, and_gate, 1
+instance = comp, \s~0 , s~0, and_gate, 1

@@ -1,0 +1,21 @@
+entity properties is
+
+	-- Entradas
+	
+	a 	: in bit;
+	b	: in bit;
+	c 	: in bit;
+	
+	-- Saídas das propriedades
+	
+	i1	: out bit; -- Identidades
+	i2	: out bit;
+	i3	: out bit;
+
+	c1 : out bit; -- Propriedade Comutativa
+	c2	: out bit;
+	
+	a1	: out bit; -- Propriedade Associativa
+	a2 : out bit;
+	
+end properties;
