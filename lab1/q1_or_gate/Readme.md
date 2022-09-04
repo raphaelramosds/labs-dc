@@ -1,4 +1,4 @@
-# Question 1 - Properties
+# Question 1 - Or Gate
 
 Desenvolver a porta **OR** em VHDL e simular utilizando o Quartus.
 
@@ -27,7 +27,7 @@ end top;
 
 ## RTL Viewer
 
-![RTL Viewer properties](./assets/RTL_viewer.jpeg "RTL Viewer or gate")
+![RTL Viewer or gate](./assets/RTL_viewer.jpeg "RTL Viewer or gate")
 
 ## Truth Table
 
