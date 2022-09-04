@@ -74,6 +74,7 @@ begin
 	a22 <= (a and b) and c;
 		
 	-- Distributions outputs
+	
 	d11 <= a and (b or c); 
 	d12 <= (a and b) or (a and c);
 	
@@ -81,9 +82,11 @@ begin
 	d22 <= (a or b) and (a or c);
 	
 	-- D'Morgan's Laws output
+	
 	m11 <= not(a and b); 
 	m12 <= not(a) or not(b);
 	
 	m21 <= not(a or b);
 	m22 <= not(a) and not(b);
+	
 end main;
