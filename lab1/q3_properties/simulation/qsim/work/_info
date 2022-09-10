@@ -4,11 +4,11 @@ K3
 cModel Technology
 Z0 dC:\Users\rapha\Documents\Dev\ufrn\labs_cd\lab1\q3_properties\simulation\qsim
 vproperties
-Z1 !s100 Yd229KaJ_>[=jZzX5UczE2
-Z2 IF8jPW1KLG@Qhb30nALoLh2
+Z1 !s100 A04W@UcNbzLKgMnJVRFGN0
+Z2 IJDEUQ?IkeCfFk;5<d_@_K1
 Z3 VZ7gEUniS0`Zdm87K]A`?W0
 Z4 dC:\Users\rapha\Documents\Dev\ufrn\labs_cd\lab1\q3_properties\simulation\qsim
-Z5 w1662207964
+Z5 w1662321033
 Z6 8properties.vo
 Z7 Fproperties.vo
 L0 31
@@ -19,16 +19,16 @@ Z9 !s90 -work|work|properties.vo|
 Z10 o-work work -O0
 !i10b 1
 !s85 0
-Z11 !s108 1662207965.142000
+Z11 !s108 1662321033.887000
 Z12 !s107 properties.vo|
 !s101 -O0
 vproperties_vlg_check_tst
 !i10b 1
-!s100 WLea7Qa7>2jC7L>>NIcEg3
-INHET;DYiG5mEe[8O82;N:3
+!s100 [jTJaZIcaU^H6H=Z_aUMP2
+Im6l=;@=6FC7X1bSe2Uff=0
 Z13 VEZ;_1VR?SmEOC19>6@C472
 R4
-Z14 w1662207962
+Z14 w1662321031
 Z15 8Waveform.vwf.vt
 Z16 FWaveform.vwf.vt
 L0 61
@@ -36,7 +36,7 @@ R8
 r1
 !s85 0
 31
-Z17 !s108 1662207965.201000
+Z17 !s108 1662321033.945000
 Z18 !s107 Waveform.vwf.vt|
 Z19 !s90 -work|work|Waveform.vwf.vt|
 !s101 -O0
@@ -62,14 +62,14 @@ R19
 R10
 vproperties_vlg_vec_tst
 !i10b 1
-!s100 XBzz2IdMJ<nQZKBkm7lH@2
-I4lHGX]5JZ[ojc[AZ;GC:H1
-Z23 VOKiBS;8J62bQD6h61K[V23
+Z23 !s100 MTU>aJb:Z4P>m^9;IZh0D2
+Z24 IUOBI`94e7S:_i<>Uk_XeF0
+Z25 VOKiBS;8J62bQD6h61K[V23
 R4
 R14
 R15
 R16
-L0 290
+Z26 L0 312
 R8
 r1
 !s85 0
