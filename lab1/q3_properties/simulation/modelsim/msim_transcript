@@ -1,0 +1,60 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do properties_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/ernan/OneDrive/Área de Trabalho/vhdl/properties/properties.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Compiling entity properties
+# -- Compiling architecture main of properties
+# 
+vsim -voptargs=+acc work.properties
+# vsim -voptargs=+acc work.properties 
+# Loading std.standard
+# Loading work.properties(main)
+add wave -position insertpoint  \
+sim:/properties/a
+wave create -driver freeze -pattern clock -initialvalue 0 -period 100ns -dutycycle 50 -starttime 0ns -endtime 1000ns sim:/properties/a
+wave create -driver freeze -pattern clock -initialvalue 0 -period 100ns -dutycycle 50 -starttime 0ns -endtime 1000ns sim:/properties/a
+wave create -driver freeze -pattern clock -initialvalue 0 -period 200ns -dutycycle 50 -starttime 0ns -endtime 1000ns sim:/properties/b
+wave create -driver freeze -pattern clock -initialvalue 0 -period 300ns -dutycycle 50 -starttime 0ns -endtime 1000ns sim:/properties/c
+wave create -driver freeze -pattern clock -initialvalue 0 -period 50ns -dutycycle 50 -starttime 0ns -endtime 1000ns sim:/properties/c
+wave create -driver freeze -pattern clock -initialvalue 0 -period 300ns -dutycycle 50 -starttime 0ns -endtime 1000ns sim:/properties/c
+add wave -position insertpoint  \
+sim:/properties/i01 \
+sim:/properties/i02 \
+sim:/properties/i03 \
+sim:/properties/c11 \
+sim:/properties/c12 \
+sim:/properties/c21 \
+sim:/properties/c22 \
+sim:/properties/a11 \
+sim:/properties/a12 \
+sim:/properties/a21 \
+sim:/properties/a22 \
+sim:/properties/d11 \
+sim:/properties/d12 \
+sim:/properties/d21 \
+sim:/properties/d22 \
+sim:/properties/m11 \
+sim:/properties/m12 \
+sim:/properties/m21 \
+sim:/properties/m22
+run
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 50ns -dutycycle 50 -starttime 0ns -endtime 1000ns Edit:/properties/a
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 100ns -dutycycle 50 -starttime 0ns -endtime 1000ns Edit:/properties/b
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 100ns -dutycycle 50 -starttime 0ns -endtime 1000ns Edit:/properties/a
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 200ns -dutycycle 50 -starttime 0ns -endtime 1000ns Edit:/properties/b
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 400ns -dutycycle 50 -starttime 0ns -endtime 1000ns Edit:/properties/c
+restart
+run
+wave editwrite -file {C:/Users/ernan/OneDrive/Área de Trabalho/vhdl/properties/simulation/modelsim/wave.do}
+# Cannot open file

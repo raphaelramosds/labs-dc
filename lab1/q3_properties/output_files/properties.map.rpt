@@ -1,5 +1,5 @@
 Analysis & Synthesis report for properties
-Sat Sep 03 09:22:33 2022
+Sun Sep 04 16:29:58 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,13 +41,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Sep 03 09:22:33 2022      ;
+; Analysis & Synthesis Status        ; Successful - Sun Sep 04 16:29:58 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; properties                                 ;
 ; Top-level Entity Name              ; properties                                 ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 0                                          ;
-;     Total combinational functions  ; 0                                          ;
+; Total logic elements               ; 6                                          ;
+;     Total combinational functions  ; 6                                          ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
 ; Total pins                         ; 22                                         ;
@@ -182,9 +182,9 @@ applicable agreement for further details.
 ; I/O pins                 ; 22               ;
 ; DSP block 9-bit elements ; 0                ;
 ; Maximum fan-out node     ; a~input          ;
-; Maximum fan-out          ; 3                ;
-; Total fan-out            ; 25               ;
-; Average fan-out          ; 0.57             ;
+; Maximum fan-out          ; 9                ;
+; Total fan-out            ; 57               ;
+; Average fan-out          ; 1.14             ;
 +--------------------------+------------------+
 
 
@@ -193,7 +193,7 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |properties                ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 22   ; 0            ; |properties         ; work         ;
+; |properties                ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 22   ; 0            ; |properties         ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -228,57 +228,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sat Sep 03 09:22:32 2022
+    Info: Processing started: Sun Sep 04 16:29:56 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off properties -c properties
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 2 design units, including 1 entities, in source file properties.vhd
-    Info (12022): Found design unit 1: properties-top
+    Info (12022): Found design unit 1: properties-main
     Info (12023): Found entity 1: properties
 Info (12127): Elaborating entity "properties" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at properties.vhd(18): used implicit default value for signal "c11" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at properties.vhd(19): used implicit default value for signal "c12" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at properties.vhd(21): used implicit default value for signal "c21" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at properties.vhd(22): used implicit default value for signal "c22" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at properties.vhd(26): used implicit default value for signal "a11" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at properties.vhd(27): used implicit default value for signal "a12" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at properties.vhd(29): used implicit default value for signal "a21" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at properties.vhd(30): used implicit default value for signal "a22" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at properties.vhd(34): used implicit default value for signal "d11" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at properties.vhd(35): used implicit default value for signal "d12" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at properties.vhd(37): used implicit default value for signal "d21" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at properties.vhd(38): used implicit default value for signal "d22" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at properties.vhd(42): used implicit default value for signal "m11" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at properties.vhd(43): used implicit default value for signal "m12" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at properties.vhd(45): used implicit default value for signal "m21" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at properties.vhd(46): used implicit default value for signal "m22" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "c11" is stuck at GND
-    Warning (13410): Pin "c12" is stuck at GND
-    Warning (13410): Pin "c21" is stuck at GND
-    Warning (13410): Pin "c22" is stuck at GND
-    Warning (13410): Pin "a11" is stuck at GND
-    Warning (13410): Pin "a12" is stuck at GND
-    Warning (13410): Pin "a21" is stuck at GND
-    Warning (13410): Pin "a22" is stuck at GND
-    Warning (13410): Pin "d11" is stuck at GND
-    Warning (13410): Pin "d12" is stuck at GND
-    Warning (13410): Pin "d21" is stuck at GND
-    Warning (13410): Pin "d22" is stuck at GND
-    Warning (13410): Pin "m11" is stuck at GND
-    Warning (13410): Pin "m12" is stuck at GND
-    Warning (13410): Pin "m21" is stuck at GND
-    Warning (13410): Pin "m22" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "b"
-    Warning (15610): No output dependent on input pin "c"
-Info (21057): Implemented 22 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 28 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 19 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 36 warnings
-    Info: Peak virtual memory: 4727 megabytes
-    Info: Processing ended: Sat Sep 03 09:22:34 2022
+    Info (21061): Implemented 6 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4711 megabytes
+    Info: Processing ended: Sun Sep 04 16:29:58 2022
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

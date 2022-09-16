@@ -1,19 +1,19 @@
 entity properties is
 
 	port (
-		-- Entradas
+		-- Inputs
 		
 		a 	: in bit;
 		b	: in bit;
 		c 	: in bit;
 		
-		-- Identidades
+		-- Identities
 		
 		i01	: out bit; -- i1 = A + 0
 		i02	: out bit; -- i2 = A.1
 		i03	: out bit; -- i3 = A
 		
-		-- Comutativas
+		-- Commutative
 
 		c11 : out bit; -- c11 = A + B 
 		c12 : out bit;	-- c12 = B + A
@@ -21,7 +21,7 @@ entity properties is
 		c21 : out bit; -- c21 = A.B 
 		c22 : out bit; -- c22 = B.A
 		
-		-- Associativas
+		-- Associative
 		
 		a11 : out bit;
 		a12 : out bit;
@@ -29,7 +29,7 @@ entity properties is
 		a21 : out bit;
 		a22 : out bit;
 		
-		-- Distributivas
+		-- Distributions
 		
 		d11 : out bit; 
 		d12 : out bit;
@@ -37,7 +37,7 @@ entity properties is
 		d21 : out bit;
 		d22 : out bit;
 		
-		-- Leis de D'Morgan
+		-- D'Morgan's Laws
 		
 		m11 : out bit; 
 		m12 : out bit;
@@ -48,15 +48,45 @@ entity properties is
 	
 end properties;
 
-architecture top of properties is
+architecture main of properties is
 begin
 
-	-- Saída das Identidades
+	-- Output of Identities
 	
 	i01 <= a or '0';
 	i02 <= a and '1';
 	i03 <= not(not(a));
 	
-	-- Saida das Comutativas
+	-- Commutative output
 	
-end top;
+	c11 <= a or b;
+	c12 <= b or a;
+	
+	c21 <= a and b;
+	c22 <= b and a;
+		
+	-- Associative output
+	
+	a11 <= a or (b or c);
+	a12 <= (a or b) or c;
+	
+	a21 <= a and (b and c);
+	a22 <= (a and b) and c;
+		
+	-- Distributions outputs
+	
+	d11 <= a and (b or c); 
+	d12 <= (a and b) or (a and c);
+	
+	d21 <= a or (b and c);
+	d22 <= (a or b) and (a or c);
+	
+	-- D'Morgan's Laws output
+	
+	m11 <= not(a and b); 
+	m12 <= not(a) or not(b);
+	
+	m21 <= not(a or b);
+	m22 <= not(a) and not(b);
+	
+end main;

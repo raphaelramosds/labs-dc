@@ -18,8 +18,9 @@
 # Loading work.properties
 # Loading cycloneiv_ver.cycloneiv_io_obuf
 # Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
 # Loading work.properties_vlg_sample_tst
 # Loading work.properties_vlg_check_tst
 # Simulation passed !
-# ** Note: $finish    : Waveform.vwf.vt(286)
+# ** Note: $finish    : Waveform.vwf.vt(308)
 #    Time: 1 us  Iteration: 0  Instance: /properties_vlg_vec_tst/tb_out

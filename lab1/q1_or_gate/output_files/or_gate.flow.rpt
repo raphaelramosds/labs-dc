@@ -1,5 +1,5 @@
 Flow report for or_gate
-Sat Sep 03 08:46:43 2022
+Sun Sep 04 17:16:44 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Sat Sep 03 08:46:43 2022      ;
+; Flow Status                        ; Successful - Sun Sep 04 17:16:44 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; or_gate                                    ;
 ; Top-level Entity Name              ; or_gate                                    ;
@@ -66,7 +66,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/03/2022 08:40:58 ;
+; Start date & time ; 09/04/2022 17:15:41 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; or_gate             ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 10995770589204.166220525805628 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 10995770589204.166232254102248 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)         ; <None>        ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057                       ; --            ; --          ; Top            ;
@@ -92,12 +92,10 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 4715 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4603 MB             ; 00:00:00                           ;
+; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 4715 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4603 MB             ; 00:00:00                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4603 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4603 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4603 MB             ; 00:00:01                           ;
-; Total                ; 00:00:05     ; --                      ; --                  ; 00:00:04                           ;
+; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -109,8 +107,6 @@ applicable agreement for further details.
 ; Analysis & Synthesis ; LAPTOP-N47I2K0B  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer   ; LAPTOP-N47I2K0B  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer   ; LAPTOP-N47I2K0B  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-N47I2K0B  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-N47I2K0B  ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
@@ -118,8 +114,6 @@ applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off or_gate -c or_gate
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog or_gate -c or_gate --vector_source=C:/Users/rapha/Documents/Dev/ufrn/labs_cd/lab1/q1_or_gate/Waveform.vwf --testbench_file=C:/Users/rapha/Documents/Dev/ufrn/labs_cd/lab1/q1_or_gate/simulation/qsim/Waveform.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/rapha/Documents/Dev/ufrn/labs_cd/lab1/q1_or_gate/simulation/qsim/ or_gate -c or_gate
 quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog or_gate -c or_gate --vector_source=C:/Users/rapha/Documents/Dev/ufrn/labs_cd/lab1/q1_or_gate/Waveform.vwf --testbench_file=C:/Users/rapha/Documents/Dev/ufrn/labs_cd/lab1/q1_or_gate/simulation/qsim/Waveform.vwf.vt
 quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/rapha/Documents/Dev/ufrn/labs_cd/lab1/q1_or_gate/simulation/qsim/ or_gate -c or_gate
 
