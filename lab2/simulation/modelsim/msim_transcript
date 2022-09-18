@@ -1,0 +1,25 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do ones_counter_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/rapha/Documents/Dev/ufrn/labs-cd/lab2/ones_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Compiling entity ones_counter
+# -- Compiling architecture main of ones_counter
+# ** Error: C:/Users/rapha/Documents/Dev/ufrn/labs-cd/lab2/ones_counter.vhd(95): (vcom-1436) Actual expression (prefix expression) of formal "and_in1" is not globally static.
+# 
+# ** Error: C:/Users/rapha/Documents/Dev/ufrn/labs-cd/lab2/ones_counter.vhd(106): VHDL Compiler exiting
+# ** Error: C:/altera/13.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./ones_counter_run_msim_rtl_vhdl.do line 8
+# C:/altera/13.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/Users/rapha/Documents/Dev/ufrn/labs-cd/lab2/ones_counter.vhd}"

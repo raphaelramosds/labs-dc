@@ -1,0 +1,150 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
+
+// DATE "09/18/2022 18:06:26"
+
+// 
+// Device: Altera EP3C5F256C6 Package FBGA256
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module ones_counter (
+	A,
+	B,
+	C,
+	S1,
+	S2);
+input 	A;
+input 	B;
+input 	C;
+output 	S1;
+output 	S2;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \S1~output_o ;
+wire \S2~output_o ;
+wire \A~input_o ;
+wire \C~input_o ;
+wire \B~input_o ;
+wire \u4|or_out~0_combout ;
+wire \u9|or_out~0_combout ;
+
+
+cycloneiii_io_obuf \S1~output (
+	.i(\u4|or_out~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\S1~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \S1~output .bus_hold = "false";
+defparam \S1~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneiii_io_obuf \S2~output (
+	.i(\u9|or_out~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\S2~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \S2~output .bus_hold = "false";
+defparam \S2~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneiii_io_ibuf \A~input (
+	.i(A),
+	.ibar(gnd),
+	.o(\A~input_o ));
+// synopsys translate_off
+defparam \A~input .bus_hold = "false";
+defparam \A~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneiii_io_ibuf \C~input (
+	.i(C),
+	.ibar(gnd),
+	.o(\C~input_o ));
+// synopsys translate_off
+defparam \C~input .bus_hold = "false";
+defparam \C~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneiii_io_ibuf \B~input (
+	.i(B),
+	.ibar(gnd),
+	.o(\B~input_o ));
+// synopsys translate_off
+defparam \B~input .bus_hold = "false";
+defparam \B~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneiii_lcell_comb \u4|or_out~0 (
+// Equation(s):
+// \u4|or_out~0_combout  = (\A~input_o  & ((\C~input_o ) # (\B~input_o ))) # (!\A~input_o  & (\C~input_o  & \B~input_o ))
+
+	.dataa(\A~input_o ),
+	.datab(\C~input_o ),
+	.datac(\B~input_o ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\u4|or_out~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \u4|or_out~0 .lut_mask = 16'hE8E8;
+defparam \u4|or_out~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneiii_lcell_comb \u9|or_out~0 (
+// Equation(s):
+// \u9|or_out~0_combout  = \A~input_o  $ (\C~input_o  $ (\B~input_o ))
+
+	.dataa(\A~input_o ),
+	.datab(\C~input_o ),
+	.datac(\B~input_o ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\u9|or_out~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \u9|or_out~0 .lut_mask = 16'h9696;
+defparam \u9|or_out~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign S1 = \S1~output_o ;
+
+assign S2 = \S2~output_o ;
+
+endmodule

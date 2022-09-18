@@ -7,5 +7,5 @@ end entity;
 
 architecture main of xnor_gate is
 begin
-	xnor_out <= not(xnor_in1) and not(xnor_in2) or xnor_in1 and xnor_in2;
+	xnor_out <= (not(xnor_in1) and not(xnor_in2)) or (xnor_in1 and xnor_in2);
 end architecture;

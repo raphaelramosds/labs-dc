@@ -7,5 +7,5 @@ end entity;
 
 architecture main of or_gate is
 begin
-	or_out <= or_in1 and or_in2;
+	or_out <= or_in1 or or_in2;
 end architecture;
