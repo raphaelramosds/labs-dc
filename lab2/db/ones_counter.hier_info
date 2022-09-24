@@ -1,0 +1,74 @@
+|ones_counter
+A => and_gate:u3.and_in1
+A => and_gate:u8.and_in1
+A => and_gate:u7.and_in1
+B => and_gate:u1.and_in2
+B => or_gate:u2.or_in2
+B => xor_gate:u5.xor_in1
+B => xnor_gate:u6.xnor_in1
+C => and_gate:u1.and_in1
+C => or_gate:u2.or_in1
+C => xor_gate:u5.xor_in2
+C => xnor_gate:u6.xnor_in2
+S1 << or_gate:u4.or_out
+S2 << or_gate:u9.or_out
+
+
+|ones_counter|and_gate:u1
+and_in1 => and_out.IN0
+and_in2 => and_out.IN1
+and_out <= and_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ones_counter|or_gate:u2
+or_in1 => or_out.IN0
+or_in2 => or_out.IN1
+or_out <= or_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ones_counter|and_gate:u3
+and_in1 => and_out.IN0
+and_in2 => and_out.IN1
+and_out <= and_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ones_counter|or_gate:u4
+or_in1 => or_out.IN0
+or_in2 => or_out.IN1
+or_out <= or_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ones_counter|xor_gate:u5
+xor_in1 => xor_out.IN0
+xor_in1 => xor_out.IN0
+xor_in2 => xor_out.IN1
+xor_in2 => xor_out.IN1
+xor_out <= xor_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ones_counter|xnor_gate:u6
+xnor_in1 => xnor_out.IN0
+xnor_in1 => xnor_out.IN0
+xnor_in2 => xnor_out.IN1
+xnor_in2 => xnor_out.IN1
+xnor_out <= xnor_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ones_counter|and_gate:u7
+and_in1 => and_out.IN0
+and_in2 => and_out.IN1
+and_out <= and_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ones_counter|and_gate:u8
+and_in1 => and_out.IN0
+and_in2 => and_out.IN1
+and_out <= and_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ones_counter|or_gate:u9
+or_in1 => or_out.IN0
+or_in2 => or_out.IN1
+or_out <= or_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
