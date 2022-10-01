@@ -1,0 +1,23 @@
+entity Mux4x1WithMux2x1 is
+  port(
+    I0, I1, I2, I3 : in bit; -- Inputs
+    s0, s1         : in bit; -- Signals
+    S              : out bit -- Output
+  );
+end Mux4x1WithMux2x1;
+
+architecture behav of Mux4x1WithMux2x1 is
+  signal S0: bit;
+  signal S1: bit;
+  component Mux2x1BehavioralDescription is
+    port(
+      I0_Mux2x1, I1_Mux2x1, s_Mux2x1 : in bit;
+      S_Mux2x1                       : out bit
+    );
+  end component;
+  
+begin
+  u1 : Mux2x1BehavioralDescription port map(I0_Mux2x1 => I0, I1_Mux2x1 => I1, s_Mux2x1 => s1, saida_and => S0);
+  u2 : Mux2x1BehavioralDescription port map(I0_Mux2x1 => I2, I1_Mux2x1 => I3, s_Mux2x1 => s1, saida_and => S1);
+  u3 : Mux2x1BehavioralDescription port map(I0_Mux2x1 => S0, I1_Mux2x1 => S1, s_Mux2x1 => s0, saida_and => S);
+end architecture behav;

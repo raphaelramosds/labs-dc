@@ -1,0 +1,7 @@
+|mux2x1_behavioral_description
+I0 => d.DATAB
+I1 => d.DATAA
+s0 => d.OUTPUTSELECT
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+
+
