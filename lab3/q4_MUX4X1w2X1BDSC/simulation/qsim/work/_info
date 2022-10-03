@@ -4,78 +4,78 @@ K3
 cModel Technology
 Z0 dC:\altera\13.1\mux4x1_behavioral_description\simulation\qsim
 vmux4x1_behavioral_description
-Z1 IFA:DP=S8z8T^mdB_DFnSA3
+Z1 IVJ8E=CCSajLzQ3k4C]BNm1
 Z2 V<;JS]Nm^h7`a@o[5<1NgT3
-Z3 dC:\altera\13.1\mux4x1_behavioral_description\simulation\qsim
-Z4 w1664638473
+Z3 dC:\Users\rapha\Documents\Dev\labs_cd\lab3\q4_MUX4X1w2X1BDSC\simulation\qsim
+Z4 w1664807603
 Z5 8mux4x1_behavioral_description.vo
 Z6 Fmux4x1_behavioral_description.vo
 L0 31
 Z7 OV;L;10.1d;51
 r1
 31
-Z8 o-work work -O0
+Z8 !s90 -work|work|mux4x1_behavioral_description.vo|
+Z9 o-work work -O0
 !i10b 1
-Z9 !s100 PFFdgo_gFkoSYIfXjEdZV0
+Z10 !s100 Qn7HR6ZlD35ooRHe]?07C2
 !s85 0
-Z10 !s108 1664638473.940000
-Z11 !s107 mux4x1_behavioral_description.vo|
-Z12 !s90 -work|work|mux4x1_behavioral_description.vo|
+Z11 !s108 1664807605.004000
+Z12 !s107 mux4x1_behavioral_description.vo|
 !s101 -O0
 vmux4x1_behavioral_description_vlg_check_tst
 !i10b 1
-!s100 34M8A:GaF021L9OeB1H980
-I6N4>JDKaMjF:@HlTl<Q;N2
-VBW57JMWkdGhJo3gC6J<L<1
+Z13 !s100 34M8A:GaF021L9OeB1H980
+Z14 I6N4>JDKaMjF:@HlTl<Q;N2
+Z15 VBW57JMWkdGhJo3gC6J<L<1
 R3
-Z13 w1664638472
-Z14 8Waveform.vwf.vt
-Z15 FWaveform.vwf.vt
+Z16 w1664807602
+Z17 8Waveform.vwf.vt
+Z18 FWaveform.vwf.vt
 L0 67
 R7
 r1
 !s85 0
 31
-Z16 !s108 1664638473.986000
-Z17 !s107 Waveform.vwf.vt|
-Z18 !s90 -work|work|Waveform.vwf.vt|
+Z19 !s108 1664807605.062000
+Z20 !s107 Waveform.vwf.vt|
+Z21 !s90 -work|work|Waveform.vwf.vt|
 !s101 -O0
-R8
+R9
 vmux4x1_behavioral_description_vlg_sample_tst
 !i10b 1
-!s100 d:DRKR@TzTaSBh<Jkd[551
-ITbnm;hFaGhfjbgS8ddWKk3
-V9:3G2hNBFIQRZFD6dBJ173
+Z22 !s100 d:DRKR@TzTaSBh<Jkd[551
+Z23 ITbnm;hFaGhfjbgS8ddWKk3
+Z24 V9:3G2hNBFIQRZFD6dBJ173
 R3
-R13
-R14
-R15
+R16
+R17
+R18
 L0 29
 R7
 r1
 !s85 0
 31
+R19
+R20
+R21
+!s101 -O0
+R9
+vmux4x1_behavioral_description_vlg_vec_tst
+!i10b 1
+Z25 !s100 0Hbgob93^`cNB0li^^h^V2
+Z26 IA_JNZ[m24o[<PVEJ_`fXB2
+Z27 VUXL3nU6Wo41z:3zcJd=8F2
+R3
 R16
 R17
 R18
-!s101 -O0
-R8
-vmux4x1_behavioral_description_vlg_vec_tst
-!i10b 1
-!s100 0Hbgob93^`cNB0li^^h^V2
-IA_JNZ[m24o[<PVEJ_`fXB2
-VUXL3nU6Wo41z:3zcJd=8F2
-R3
-R13
-R14
-R15
-L0 162
+Z28 L0 162
 R7
 r1
 !s85 0
 31
-R16
-R17
-R18
+R19
+R20
+R21
 !s101 -O0
-R8
+R9
