@@ -2,8 +2,3 @@
 **/incremental_db
 **/output_files
 **/simulation
-
-# !*.vhd
-# !*.png
-# !*.qpf
-# !*.vwf
