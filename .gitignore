@@ -1,7 +1,6 @@
-*
-!*.vhd
-!*.png
-!*.vwf
-!README.md
-!*.qpf
+**/!*.vhd
+**/!*.png
+**/!*.vwf
+**/!README.md
+**/!*.qpf
 
