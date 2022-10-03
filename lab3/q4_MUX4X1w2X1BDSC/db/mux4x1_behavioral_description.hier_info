@@ -1,0 +1,32 @@
+|mux4x1_behavioral_description
+I0 => Mux2x1BehavioralDescription:u1.I0
+I1 => Mux2x1BehavioralDescription:u1.I1
+I2 => Mux2x1BehavioralDescription:u2.I0
+I3 => Mux2x1BehavioralDescription:u2.I1
+s0_in => Mux2x1BehavioralDescription:u3.s_in
+s1_in => Mux2x1BehavioralDescription:u1.s_in
+s1_in => Mux2x1BehavioralDescription:u2.s_in
+S <= Mux2x1BehavioralDescription:u3.S
+
+
+|mux4x1_behavioral_description|Mux2x1BehavioralDescription:u1
+I0 => S.DATAB
+I1 => S.DATAA
+s_in => S.OUTPUTSELECT
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux4x1_behavioral_description|Mux2x1BehavioralDescription:u2
+I0 => S.DATAB
+I1 => S.DATAA
+s_in => S.OUTPUTSELECT
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux4x1_behavioral_description|Mux2x1BehavioralDescription:u3
+I0 => S.DATAB
+I1 => S.DATAA
+s_in => S.OUTPUTSELECT
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
