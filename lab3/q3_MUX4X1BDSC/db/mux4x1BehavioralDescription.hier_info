@@ -1,4 +1,4 @@
-|mux4x1BehavioralDescription
+|Mux4x1BehavioralDescription
 I0 => Mux0.IN0
 I1 => Mux0.IN1
 I2 => Mux0.IN2

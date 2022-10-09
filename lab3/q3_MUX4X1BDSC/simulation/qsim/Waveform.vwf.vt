@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/01/2022 12:59:17"
+// Generated on "10/09/2022 17:26:58"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    Mux4x1BehavioralDescription
 // 
@@ -185,26 +185,6 @@ Mux4x1BehavioralDescription i1 (
 	.s1_in(s1_in)
 );
 
-// s1_in
-initial
-begin
-	s1_in = 1'b0;
-	s1_in = #400000 1'b1;
-	s1_in = #400000 1'b0;
-end 
-
-// s0_in
-initial
-begin
-	repeat(2)
-	begin
-		s0_in = 1'b0;
-		s0_in = #200000 1'b1;
-		# 200000;
-	end
-	s0_in = 1'b0;
-end 
-
 // I0
 always
 begin
@@ -235,6 +215,26 @@ begin
 	I3 = 1'b0;
 	I3 = #12500 1'b1;
 	#12500;
+end 
+
+// s1_in
+initial
+begin
+	s1_in = 1'b0;
+	s1_in = #400000 1'b1;
+	s1_in = #400000 1'b0;
+end 
+
+// s0_in
+initial
+begin
+	repeat(2)
+	begin
+		s0_in = 1'b0;
+		s0_in = #200000 1'b1;
+		# 200000;
+	end
+	s0_in = 1'b0;
 end 
 
 Mux4x1BehavioralDescription_vlg_sample_tst tb_sample (
