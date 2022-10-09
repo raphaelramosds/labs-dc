@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/01/2022 11:38:10"
+// Generated on "10/09/2022 16:40:36"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    mux2x1_behavioral_description
 // 
@@ -173,28 +173,28 @@ mux2x1_behavioral_description i1 (
 	.s0(s0)
 );
 
-// s0
-always
-begin
-	s0 = 1'b0;
-	s0 = #12500 1'b1;
-	#12500;
-end 
-
 // I0
 always
 begin
 	I0 = 1'b0;
-	I0 = #25000 1'b1;
-	#25000;
+	I0 = #5000 1'b1;
+	#5000;
 end 
 
 // I1
 always
 begin
 	I1 = 1'b0;
-	I1 = #50000 1'b1;
-	#50000;
+	I1 = #10000 1'b1;
+	#10000;
+end 
+
+// s0
+always
+begin
+	s0 = 1'b0;
+	s0 = #20000 1'b1;
+	#20000;
 end 
 
 mux2x1_behavioral_description_vlg_sample_tst tb_sample (

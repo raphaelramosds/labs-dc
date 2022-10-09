@@ -1,7 +1,7 @@
 vendor_name = ModelSim
-source_file = 1, C:/altera/13.1/mux2x1_behavioral_description/mux2x1_behavioral_description.vhd
-source_file = 1, C:/altera/13.1/mux2x1_behavioral_description/Waveform.vwf
-source_file = 1, C:/altera/13.1/mux2x1_behavioral_description/db/mux2x1_behavioral_description.cbx.xml
+source_file = 1, C:/Users/rapha/Documents/Dev/labs_cd/lab3/q2_MUX2X1BDSC/mux2x1_behavioral_description.vhd
+source_file = 1, C:/Users/rapha/Documents/Dev/labs_cd/lab3/q2_MUX2X1BDSC/Waveform.vwf
+source_file = 1, C:/Users/rapha/Documents/Dev/labs_cd/lab3/q2_MUX2X1BDSC/db/mux2x1_behavioral_description.cbx.xml
 source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd

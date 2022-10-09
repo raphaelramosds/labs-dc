@@ -4,78 +4,78 @@ K3
 cModel Technology
 Z0 dC:\altera\13.1\mux2x1_behavioral_description\simulation\qsim
 vmux2x1_behavioral_description
-Z1 I:ZPDF;kzQZ48AEHa>BTUn0
-Z2 V[lPdURMk]g3UKB]]`Nmbc2
-Z3 dC:\altera\13.1\mux2x1_behavioral_description\simulation\qsim
-Z4 w1664635091
-Z5 8mux2x1_behavioral_description.vo
-Z6 Fmux2x1_behavioral_description.vo
+Z1 !s100 MRnTc84m^zUzFATD:R1f[0
+Z2 I:ZPDF;kzQZ48AEHa>BTUn0
+Z3 V[lPdURMk]g3UKB]]`Nmbc2
+Z4 dC:\Users\rapha\Documents\Dev\labs_cd\lab3\q2_MUX2X1BDSC\simulation\qsim
+Z5 w1665344438
+Z6 8mux2x1_behavioral_description.vo
+Z7 Fmux2x1_behavioral_description.vo
 L0 31
-Z7 OV;L;10.1d;51
+Z8 OV;L;10.1d;51
 r1
 31
-Z8 o-work work -O0
+Z9 !s90 -work|work|mux2x1_behavioral_description.vo|
+Z10 o-work work -O0
 !i10b 1
-Z9 !s100 MRnTc84m^zUzFATD:R1f[0
 !s85 0
-Z10 !s108 1664635092.441000
-Z11 !s107 mux2x1_behavioral_description.vo|
-Z12 !s90 -work|work|mux2x1_behavioral_description.vo|
+Z11 !s108 1665344439.162000
+Z12 !s107 mux2x1_behavioral_description.vo|
 !s101 -O0
 vmux2x1_behavioral_description_vlg_check_tst
 !i10b 1
-!s100 F^4KPnQ_3f3=b9VhFPPZ21
-IS;ecS;0:^KFECgB>KGX@X3
-V]zdMhbnHSFY6izN`eDR<:3
-R3
-Z13 w1664635090
-Z14 8Waveform.vwf.vt
-Z15 FWaveform.vwf.vt
+Z13 !s100 F^4KPnQ_3f3=b9VhFPPZ21
+Z14 IS;ecS;0:^KFECgB>KGX@X3
+Z15 V]zdMhbnHSFY6izN`eDR<:3
+R4
+Z16 w1665344436
+Z17 8Waveform.vwf.vt
+Z18 FWaveform.vwf.vt
 L0 61
-R7
+R8
 r1
 !s85 0
 31
-Z16 !s108 1664635092.486000
-Z17 !s107 Waveform.vwf.vt|
-Z18 !s90 -work|work|Waveform.vwf.vt|
+Z19 !s108 1665344439.216000
+Z20 !s107 Waveform.vwf.vt|
+Z21 !s90 -work|work|Waveform.vwf.vt|
 !s101 -O0
-R8
+R10
 vmux2x1_behavioral_description_vlg_sample_tst
 !i10b 1
-!s100 W:Soa3;z:2PJdR<1;g`QP3
-IXiYne?0beYJAdXP39R34N3
-Vnm2cG^S[17:]A5FYLGFc53
-R3
-R13
-R14
-R15
-L0 29
-R7
-r1
-!s85 0
-31
+Z22 !s100 W:Soa3;z:2PJdR<1;g`QP3
+Z23 IXiYne?0beYJAdXP39R34N3
+Z24 Vnm2cG^S[17:]A5FYLGFc53
+R4
 R16
 R17
 R18
-!s101 -O0
+L0 29
 R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
 vmux2x1_behavioral_description_vlg_vec_tst
 !i10b 1
-!s100 ZACoc_`EzT7@dB4<@<CBP0
-I2OlTV98BbAHBPjCghjH140
-VggAk9PZI]oK@S2;G1AJD@3
-R3
-R13
-R14
-R15
-L0 156
-R7
-r1
-!s85 0
-31
+!s100 RI3N4R>n_8mk]j17_Nc@g1
+IU4_jGH1?9kZb=`UV2A[QY1
+Z25 VggAk9PZI]oK@S2;G1AJD@3
+R4
 R16
 R17
 R18
-!s101 -O0
+Z26 L0 156
 R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
