@@ -13,14 +13,14 @@ git checkout main
 
 Uma vez que as modificações prontas para a produção estão na `dev`
 
-```
+```bash
 git checkout main
 git merge dev
 ```
 
 Para puxar as modificações feitas por um componente do grupo
 
-```
+```bash
 git pull
 ```
 
