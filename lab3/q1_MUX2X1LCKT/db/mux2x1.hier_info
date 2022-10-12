@@ -1,8 +1,0 @@
-|mux2x1
-s => d.IN0
-s => d.IN0
-I0 => d.IN1
-I1 => d.IN1
-d << d.DB_MAX_OUTPUT_PORT_TYPE
-
-

@@ -1,5 +1,0 @@
-architecture ones_counter is
-	port(
-	
-);
-end architecture;
