@@ -18,13 +18,13 @@
 #
 # Quartus II 64-Bit
 # Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-# Date created = 12:03:53  October 01, 2022
+# Date created = 11:24:49  October 15, 2022
 #
 # -------------------------------------------------------------------------- #
 
 QUARTUS_VERSION = "13.1"
-DATE = "12:03:53  October 01, 2022"
+DATE = "11:24:49  October 15, 2022"
 
 # Revisions
 
-PROJECT_REVISION = "mux4x1_behavioral_description"
+PROJECT_REVISION = "decoder_for_seven_segment_display"
