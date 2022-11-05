@@ -6,32 +6,32 @@ entity reg4dff is
 end entity;
 
 architecture main of reg4dff is
-	component flipflopD is
+	component flipflopd is
 		port(
 			clk, D : in bit;
 			Q : out bit
 		);
 	end component;
 begin
-	u0: flipflopD port map(
+	u0: flipflopd port map(
 		D => d0,
 		Q => q0,
 		clk => clk0
 	);
 	
-	u1: flipflopD port map(
+	u1: flipflopd port map(
 		D => d1,
 		Q => q1,
 		clk => clk0
 	);
 	
-	u2: flipflopD port map(
+	u2: flipflopd port map(
 		D => d2,
 		Q => q2,
 		clk => clk0
 	);
 
-	u3: flipflopD port map(
+	u3: flipflopd port map(
 		D => d3,
 		Q => q3,
 		clk => clk0
