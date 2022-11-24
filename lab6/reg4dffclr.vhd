@@ -1,12 +1,11 @@
--- is a reg4dffclr
-entity contador is
+entity reg4dffclr is
 	port(
 		clk0_c, d3_c, d2_c, d1_c, d0_c, clr : in bit;
 		q3_c, q2_c, q1_c, q0_c : out bit
 	);
 end entity;
 
-architecture main of contador is
+architecture main of reg4dffclr is
 	component reg4dff is
 		port(
 			clk0, d3, d2, d1, d0 : in bit;
