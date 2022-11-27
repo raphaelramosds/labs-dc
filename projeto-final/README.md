@@ -16,6 +16,6 @@ A ideia dessa pasta é ter a implementação dos componentes que serão utilizad
 
 Abaixo uma imagem do relógio que será implementado usando os componentes acima
 
-![Relogio do projeto](./assets/projeto-final.png)
+![Relogio do projeto](https://github.com/raphaelramosds/labs_cd/blob/dev/projeto-final/componentes/UpCounterSLC/assets/upcounter-diagram.png)
 
 Este projeto pode ser acessado [neste link](https://circuitverse.org/simulator/embed/tests-425a9ce7-9d2c-4cc8-853e-6f8a1b4e7ec4)
