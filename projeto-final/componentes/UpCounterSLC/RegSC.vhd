@@ -16,8 +16,8 @@ ARCHITECTURE main OF RegSC IS
     
     COMPONENT Mux2x1 IS
         PORT (
-            s, I0, I1 : IN BIT;
-            d : OUT BIT
+            I0, I1, s_in : IN BIT;
+            S : OUT BIT
         );
     END COMPONENT;
 
@@ -43,31 +43,31 @@ BEGIN
     );
 
     mux0 : Mux2x1 PORT MAP(
-        s => clr,
+        s_in => clr,
         I0 => e0,
         I1 => z,
-        d => m0
+        S => m0
     );
 
     mux1 : Mux2x1 PORT MAP(
-        s => clr,
+        s_in => clr,
         I0 => e1,
         I1 => z,
-        d => m1
+        S => m1
     );
 
     mux2 : Mux2x1 PORT MAP(
-        s => clr,
+        s_in => clr,
         I0 => e2,
         I1 => z,
-        d => m2
+        S => m2
     );
 
     mux3 : Mux2x1 PORT MAP(
-        s => clr,
+        s_in => clr,
         I0 => e3,
         I1 => z,
-        d => m3
+        S => m3
     );
 
 END ARCHITECTURE;
