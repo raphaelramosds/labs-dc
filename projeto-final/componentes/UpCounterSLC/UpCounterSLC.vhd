@@ -85,8 +85,8 @@ BEGIN
 		I1 => im0,
 		I2 => ec0,
 		I3 => ec0,
-		s0_in => ld,
-		s1_in => cnt,
+		s0_in => cnt,
+		s1_in => ld,
 		S => mr0
 	);
 
@@ -95,8 +95,8 @@ BEGIN
 		I1 => im1,
 		I2 => ec1,
 		I3 => ec1,
-		s0_in => ld,
-		s1_in => cnt,
+		s0_in => cnt,
+		s1_in => ld,
 		S => mr1
 	);
 
@@ -105,8 +105,8 @@ BEGIN
 		I1 => im2,
 		I2 => ec2,
 		I3 => ec2,
-		s0_in => ld,
-		s1_in => cnt,
+		s0_in => cnt,
+		s1_in => ld,
 		S => mr2
 	);
 
@@ -115,8 +115,8 @@ BEGIN
 		I1 => im3,
 		I2 => ec3,
 		I3 => ec3,
-		s0_in => ld,
-		s1_in => cnt,
+		s0_in => cnt,
+		s1_in => ld,
 		S => mr3
 	);
 

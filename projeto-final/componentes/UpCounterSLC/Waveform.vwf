@@ -167,7 +167,15 @@ TRANSITION_LIST("clear")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 21.0;
+		LEVEL 1 FOR 9.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 891.0;
+			LEVEL 1 FOR 9.0;
+		}
+		LEVEL 0 FOR 70.0;
 	}
 }
 
@@ -191,12 +199,7 @@ TRANSITION_LIST("cnt")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 50;
-			LEVEL 0 FOR 10.0;
-			LEVEL 1 FOR 10.0;
-		}
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -283,12 +286,7 @@ TRANSITION_LIST("ld")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 5;
-			LEVEL 0 FOR 100.0;
-			LEVEL 1 FOR 100.0;
-		}
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
