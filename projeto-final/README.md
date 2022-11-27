@@ -14,7 +14,7 @@ A ideia dessa pasta é ter a implementação dos componentes que serão utilizad
 
 ## Objetivo
 
-Abaixo uma imagem do relógio que será implementado usando os componentes acima
+Abaixo uma imagem do relógio que será implementado usando os componentes acima. O componente que constrói essa relógio será chamado de `<algum nome legal>`
 
 ![Relogio do projeto](./assets/projeto-final.png)
 
