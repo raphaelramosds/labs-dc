@@ -7,17 +7,17 @@ Desenvolver a porta **AND** em VHDL e simular utilizando o Quartus.
 [View File](./AndGate.vhd)
 
 ```vhdl
-entity AndGate is
-	port(
-		a, b : in bit;
-		s    : out bit
+ENTITY AndGate IS
+	PORT (
+		a, b : IN BIT;
+		s : OUT BIT
 	);
-end AndGate;
+END AndGate;
 
-architecture main of AndGate is
-begin
-	s <= a and b;
-end architecture main;
+ARCHITECTURE main OF AndGate IS
+BEGIN
+	s <= a AND b;
+END ARCHITECTURE main;
 ```
 
 ## Waves

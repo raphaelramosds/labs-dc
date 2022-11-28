@@ -1,11 +1,11 @@
-ENTITY decoder_for_seven_segment_display IS
+ENTITY SSDBD IS
   PORT (
     A3, A2, A1, A0 : IN BIT;
     S6, S5, S4, S3, S2, S1, S0 : OUT BIT
   );
 END;
 
-ARCHITECTURE behav OF decoder_for_seven_segment_display IS
+ARCHITECTURE behav OF SSDBD IS
 
   -- Vetores de bits
 

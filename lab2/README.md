@@ -49,6 +49,6 @@ Abaixo está a visualização do RTL gerado pelo programa
 
 ![RTL](./assets/rtl.PNG)
 
-A simulação do contador de bits altos é mostrada abaixo. Considere que `S1` é o menos significativo.
+A simulação do contador de bits altos é mostrada abaixo. Considere que `S1` é o mais significativo.
 
 ![Waves](./assets/waves.png)

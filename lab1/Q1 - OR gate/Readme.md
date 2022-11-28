@@ -7,23 +7,22 @@ Desenvolver a porta **OR** em VHDL e simular utilizando o Quartus.
 [View File](./OrGate.vhd)
 
 ```vhdl
-entity OrGate is
-	port (
-		a	: in bit;
-		b 	: in bit;
-		s	: out bit
+ENTITY OrGate IS
+	PORT (
+		a, b : IN BIT;
+		s : OUT BIT
 	);
-end OrGate;
+END OrGate;
 
-architecture top of OrGate is
-begin 
-	s <= a or b;
-end top;
+ARCHITECTURE main OF OrGate IS
+BEGIN
+	s <= a OR b;
+END ARCHITECTURE main;
 ```
 
 ## Waves
 
-![Waves or gate](./assets/out_or_gate.png "Waves or gate")
+![Waves or gate](./assets/out_or_gate.PNG "Waves or gate")
 
 ## RTL Viewer
 

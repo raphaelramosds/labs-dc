@@ -7,14 +7,14 @@ More complex multiplexers can be built using 2x1 multiplexers. The example below
 ### MUX2x1
 
 ```vhdl
-ENTITY Mux2x1BD IS
+ENTITY Mux2x1 IS
 	PORT (
 		I0, I1, s_in : IN BIT;
 		S : OUT BIT
 	);
 END;
 
-ARCHITECTURE behav OF Mux2x1BD IS
+ARCHITECTURE behav OF Mux2x1 IS
 BEGIN
 	WITH s_in SELECT
 		S <= I0 WHEN '0',
