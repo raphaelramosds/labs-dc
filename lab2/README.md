@@ -13,7 +13,6 @@ Para projetos grandes ou projetos em que mais de uma pessoa está trabalhando, �
 
 Para utilizar um componente, é necessário que o arquivo VHDL do componente que está sendo utilizado esteja na mesma pasta onde o projeto será compilado e executado.
 
-
 ## Atividade Laborial
 
 Vamos projetar um circuito que conta o número de bits iguais a 1 presente em três entradas (A, B, C) e, como saída, fornece esse número em binário, por meio de duas saídas S1 e S2.
@@ -43,3 +42,13 @@ O número de 1’s nas entradas pode variar de 0 a 3. Assim, uma saída com dois
 as portas lógicas, crie um projeto separado para cada porta e utilize o comando
 “COMPONENT” e “PORT MAP”.
 3. Elabore e entregue um relatório contendo a execução correta dos itens 1 a 4.
+
+## Resultados
+
+Abaixo está a visualização do RTL gerado pelo programa
+
+![RTL](./assets/rtl.PNG)
+
+A simulação do contador de bits altos é mostrada abaixo. Considere que `S1` é o menos significativo.
+
+![Waves](./assets/waves.png)
