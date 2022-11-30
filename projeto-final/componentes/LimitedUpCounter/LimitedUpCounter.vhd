@@ -36,10 +36,10 @@ ARCHITECTURE main OF LimitedUpCounter IS
     );
   END COMPONENT;
 
-  -- Limite do contador eh 10
+  -- Limite do contador eh 9
 
-  SIGNAL l0 : BIT := '0';
-  SIGNAL l1 : BIT := '1';
+  SIGNAL l0 : BIT := '1';
+  SIGNAL l1 : BIT := '0';
   SIGNAL l2 : BIT := '0';
   SIGNAL l3 : BIT := '1';
 

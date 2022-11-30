@@ -10,6 +10,12 @@ A ideia dessa pasta é ter a implementação dos componentes que serão utilizad
 
 `component SSDisplay` display de sete segmentos
 
+## Estrutura
+
+`/src` tem os arquivos para construção do projeto final
+
+`/components` tem as pastas dos componentes implementados para serem utilizados na pasta `/src`
+
 ## Objetivo
 
 Abaixo está o datapath do relógio digital que se pretende montar utilizando os componentes acima. Ele está organizado em um componente chamado chamado de `DigitalClock`
