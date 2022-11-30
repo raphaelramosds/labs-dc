@@ -20,6 +20,12 @@ Considerando entradas de dados com largura de 1 bit:
 4. Implemente em VHDL, utilizando a descrição comportamental + componentes, um MUX 4x1 utilizando MUX 2x1.
 5. Entregue um relatório contendo/descrevendo a execução dos itens 1 a 4
 
+### Legenda
+
+LC é a implementação por circuitos lógicos
+
+BD é a implementação pro descrição comportamental
+
 ### Dica
 
 A descrição de sinais de seleção, para multiplexadores com mais de duas entradas, pode ser auxiliada pelo(s):
