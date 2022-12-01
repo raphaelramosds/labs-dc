@@ -1,6 +1,7 @@
 ENTITY LimitedUpCounter IS
   PORT (
     pin0, pin1, pin2, pin3, -- entradas do contador
+    l0, l1, l2, l3, -- limite do contador
     load, clr, count, clk1 : IN BIT;
     t3, t2, t1, t0, tc : OUT BIT -- saídas do contador
   );
@@ -35,13 +36,6 @@ ARCHITECTURE main OF LimitedUpCounter IS
       s : OUT BIT
     );
   END COMPONENT;
-
-  -- Limite do contador eh 10
-
-  SIGNAL l0 : BIT := '0';
-  SIGNAL l1 : BIT := '1';
-  SIGNAL l2 : BIT := '0';
-  SIGNAL l3 : BIT := '1';
 
   -- UpCounterSLC -> Comp4
 
