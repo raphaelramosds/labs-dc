@@ -135,7 +135,36 @@ ARCHITECTURE main OF DigitalClock IS
 	SIGNAL mchu2 : BIT;
 	SIGNAL mchu3 : BIT;
 
-	-- SSDisplay -> Saída de Segundos (unidade)
+	-- tc Contador de segundos (unidade) -> cnt Contador de segundos (dezena)
+	SIGNAL tc_secu : BIT;
+
+	-- tc Contador de segundos (dezena) -> AndGate
+	SIGNAL tc_secd : BIT;
+
+	-- AndGate -> cnt Contador de minutos (unidade)
+	SIGNAL and_cmu : BIT;
+
+	-- tc Contador de minutos (unidade) -> AndGate
+	SIGNAL tc_cmu : BIT;
+
+	-- AndGate -> cnt Contador de minutos (dezena)
+	SIGNAL and_cmd : BIT;
+
+	-- tc Contador de minutos (dezena) -> AnGate
+	SIGNAL tc_cmd : BIT;
+
+	-- AndGate -> cnt Contador de horas (unidade)
+	SIGNAL and_chu : BIT;
+
+	-- tc Contador de horas (unidade) -> AndGate
+	SIGNAL tc_chu : BIT;
+
+	-- AndGate -> cnt Contador de horas (dezena)
+	SIGNAL and_chd : BIT;
+
+	-- tc Contador de horas ()
+
+	-- SAÍDA: SSDisplay -> Saída de Segundos 
 
 	SIGNAL sec0u : BIT;
 	SIGNAL sec1u : BIT;
@@ -218,123 +247,147 @@ BEGIN
 	-- Contadores
 
 	hoursd_counter : LimitedUpCounter PORT MAP(
-		pin0 =>, 
-		pin1 =>, 
-		pin2 =>, 
-		pin3 =>, 
-		l0 => two0, 
-		l1 => two1, 
-		l2 => two2, 
-		l3 => two3, 
-		load => ld, 
-		clr => clear, 
-		count => cnt, 
+		pin0 => hd0_in,
+		pin1 => hd1_in,
+		pin2 => hd2_in,
+		pin3 => hd3_in,
+		l0 => two0,
+		l1 => two1,
+		l2 => two2,
+		l3 => two3,
+		load => ld,
+		clr => clear,
+		count => and_chd,
 		clk1 => clk,
-		t3 => chd_ssd3, 
-		t2 => chd_ssd2, 
-		t1 => chd_ssd1, 
-		t0 => chd_ssd0, 
-		tc =>
+		t3 => chd_ssd3,
+		t2 => chd_ssd2,
+		t1 => chd_ssd1,
+		t0 => chd_ssd0
+		-- tc =>
 	);
 
 	hoursu_counter : LimitedUpCounter PORT MAP(
-		pin0 =>, 
-		pin1 =>, 
-		pin2 =>, 
-		pin3 =>, 
-		l0 => mchu0, 
-		l1 => mchu1, 
-		l2 => mchu2, 
-		l3 => mchu3, 
-		load => ld, 
-		clr => clear, 
-		count => cnt, 
+		pin0 => hu0_in,
+		pin1 => hu1_in,
+		pin2 => hu2_in,
+		pin3 => hu3_in,
+		l0 => mchu0,
+		l1 => mchu1,
+		l2 => mchu2,
+		l3 => mchu3,
+		load => ld,
+		clr => clear,
+		count => and_chu,
 		clk1 => clk,
-		t3 => chu_ssd3, 
-		t2 => chu_ssd2, 
-		t1 => chu_ssd1, 
-		t0 => chu_ssd0, 
-		tc =>
+		t3 => chu_ssd3,
+		t2 => chu_ssd2,
+		t1 => chu_ssd1,
+		t0 => chu_ssd0,
+		tc => tc_chu
 	);
 
 	minu_counter : LimitedUpCounter PORT MAP(
-		pin0 =>, 
-		pin1 =>, 
-		pin2 =>, 
-		pin3 =>, 
-		l0 => nine0, 
-		l1 => nine1, 
-		l2 => nine2, 
-		l3 => nine3, 
-		load => ld, 
-		clr => clear, 
-		count => cnt, 
+		pin0 => mu0_in,
+		pin1 => mu1_in,
+		pin2 => mu2_in,
+		pin3 => mu3_in,
+		l0 => nine0,
+		l1 => nine1,
+		l2 => nine2,
+		l3 => nine3,
+		load => ld,
+		clr => clear,
+		count => and_cmu,
 		clk1 => clk,
-		t3 => cmu_ssd3, 
-		t2 => cmu_ssd2, 
-		t1 => cmu_ssd1, 
-		t0 => cmu_ssd0, 
-		tc =>
+		t3 => cmu_ssd3,
+		t2 => cmu_ssd2,
+		t1 => cmu_ssd1,
+		t0 => cmu_ssd0,
+		tc => tc_cmu
+	);
+
+	and_houru : AndGate PORT MAP(
+		a => tc_chu,
+		b => and_chu,
+		s => and_chd
 	);
 
 	mind_counter : LimitedUpCounter PORT MAP(
-		pin0 =>, 
-		pin1 =>, 
-		pin2 =>, 
-		pin3 =>, 
-		l0 => five0, 
-		l1 => five1, 
-		l2 => five2, 
-		l3 => five3, 
-		load => ld, 
-		clr => clear, 
-		count => cnt, 
+		pin0 => md0_in,
+		pin1 => md1_in,
+		pin2 => md2_in,
+		pin3 => md3_in,
+		l0 => five0,
+		l1 => five1,
+		l2 => five2,
+		l3 => five3,
+		load => ld,
+		clr => clear,
+		count => and_cmd,
 		clk1 => clk,
-		t3 => cmd_ssd3, 
-		t2 => cmd_ssd2, 
-		t1 => cmd_ssd1, 
-		t0 => cmd_ssd0, 
-		tc =>
+		t3 => cmd_ssd3,
+		t2 => cmd_ssd2,
+		t1 => cmd_ssd1,
+		t0 => cmd_ssd0,
+		tc => tc_cmd
+	);
+
+	and_mind : AndGate PORT MAP(
+		a => tc_cmd,
+		b => and_cmd,
+		s => and_chu
 	);
 
 	secu_counter : LimitedUpCounter PORT MAP(
-		pin0 =>, 
-		pin1 =>, 
-		pin2 =>, 
-		pin3 =>, 
-		l0 => nine0, 
-		l1 => nine1, 
-		l2 => nine2, 
-		l3 => nine3, 
-		load => ld, 
-		clr => clear, 
-		count => cnt, 
+		pin0 => su0_in,
+		pin1 => su1_in,
+		pin2 => su2_in,
+		pin3 => su3_in,
+		l0 => nine0,
+		l1 => nine1,
+		l2 => nine2,
+		l3 => nine3,
+		load => ld,
+		clr => clear,
+		count => cnt,
 		clk1 => clk,
-		t3 => csu_ssd3, 
-		t2 => csu_ssd2, 
-		t1 => csu_ssd1, 
-		t0 => csu_ssd0, 
-		tc =>
+		t3 => csu_ssd3,
+		t2 => csu_ssd2,
+		t1 => csu_ssd1,
+		t0 => csu_ssd0,
+		tc => tc_secu
+	);
+
+	and_minu : AndGate PORT MAP(
+		a => tc_cmu,
+		b => and_cmu,
+		s => and_cmd
 	);
 
 	secd_counter : LimitedUpCounter PORT MAP(
-		pin0 =>, 
-		pin1 =>, 
-		pin2 =>, 
-		pin3 =>, 
-		l0 => five0, 
-		l1 => five1, 
-		l2 => five2, 
-		l3 => five3, 
-		load => ld, 
-		clr => clear, 
-		count => cnt, 
+		pin0 => sd0_in,
+		pin1 => sd1_in,
+		pin2 => sd2_in,
+		pin3 => sd3_in,
+		l0 => five0,
+		l1 => five1,
+		l2 => five2,
+		l3 => five3,
+		load => ld,
+		clr => clear,
+		count => tc_secu,
 		clk1 => clk,
-		t3 => csd_ssd3, 
-		t2 => csd_ssd2, 
-		t1 => csd_ssd1, 
+		t3 => csd_ssd3,
+		t2 => csd_ssd2,
+		t1 => csd_ssd1,
 		t0 => csd_ssd0,
-		tc =>
+		tc => tc_secd
+	);
+
+	and_secu : AndGate PORT MAP(
+		a => tc_secu,
+		b => tc_secd,
+		s => and_cmu
 	);
 
 	-- Saída dos segundos (unidade e dezena)
@@ -468,7 +521,7 @@ BEGIN
 		b2 => chd_ssd2,
 		b1 => chd_ssd1,
 		b0 => chd_ssd0,
-		eq => comp4_mux,
+		eq => comp4_mux
 	);
 
 	hd0_out <= hour0d;
