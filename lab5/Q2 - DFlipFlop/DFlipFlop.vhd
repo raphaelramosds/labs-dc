@@ -1,12 +1,12 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all ;
 
-ENTITY flipflopd IS
+ENTITY DFlipFlop IS
 	PORT(D, clk : IN BIT;
 			Q : OUT BIT);
 END;
 
-ARCHITECTURE behav OF flipflopd IS
+ARCHITECTURE behav OF DFlipFlop IS
 BEGIN
 	PROCESS (D, clk)
 		BEGIN

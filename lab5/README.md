@@ -19,7 +19,7 @@ Os dados de entrada que foram usados nos registradores foram `d0, d1, d2` e `d3`
 
 ## Registrador sensível ao nível
 
-O registrador sensível ao nível de *N* bits é construido com *N* latches D para 1 bit em paralelo. A arquitetura para o latch D de 1 bit tem como entradas `D` e `c`, e saída `Q`
+O registrador sensível ao nível de *N* bits é construido com *N* latches D para 1 bit em paralelo. A arquitetura para o latch D de 1 bit tem como entradas D e c, e saída Q
 
 | **c** | **D** | **Q** | **Q´** |
 |-------|-------|-------|--------|
@@ -28,9 +28,13 @@ O registrador sensível ao nível de *N* bits é construido com *N* latches D pa
 | 1     | 0     | 0     | 1      |
 | 1     | 1     | 1     | 0      |
 
-Pela tabela acima, o latch D apenas vai registrar o valor lógico de `D` em `Q` se o clock tiver nível alto.
+Pela tabela acima, o latch D apenas vai registrar o valor lógico de D em Q se o clock tiver nível alto.
 
-![Latch D waveform](https://github.com/raphaelramosds/labs_cd/blob/dev/lab5/q1_dlatch/waves.PNG)
+![Latch D waveform](./Q1%20-%20LatchD/waves.PNG)
+
+Abaixo está a forma de onda do registrador de quatro bits feito com latched D
+
+![D Register waveform](./Q3%20-%20Reg4DL/waves.PNG)
 
 
 ## Registrador sensível a borda
@@ -42,6 +46,11 @@ O registrador sensível a borda de *N* bits é construido com *N* flip-flops D p
 |   0   |    ↑    |   0   |
 |   1   |    ↑    |   1   |
 
-Pela tabela acima, o flipflop D apenas vai registrar o valor lógico de `D` em `Q` se o clock `clk` tiver uma transição de zero para um.
+Pela tabela acima, o flipflop D apenas vai registrar o valor lógico de D em Q se o clock clk tiver uma transição de zero para um.
 
-![Flip flop D waveform](https://github.com/raphaelramosds/labs_cd/blob/dev/lab5/q2_dflipflop/waves.PNG)
+![Flip flop D waveform](./Q2%20-%20DFlipFlop/waves.PNG)
+
+
+Abaixo está a forma de onda do registrador de quatro bits feito com flip flops D
+
+![D Register waveform](./Q4%20-%20Reg4DFF/waves.PNG)
