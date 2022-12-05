@@ -1,12 +1,12 @@
 # Laboratório 1 – Portas Lógicas
 
-## Objetivos:
+## Objetivos
 
 1. Treinar os conceitos de portas lógicas, circuitos lógicos, funções booleanas e tabelas da verdade;
 2. Provar algumas das propriedades da álgebra booleana;
 3. Treinar a programação em VHDL de entidades básicas.
 
-## Atividades:
+## Atividades
 
 1. Desenvolva a porta OR em VHDL e simule utilizando o Quartus;
 2. Faça o teste da porta AND em VHDL e simule utilizando o Quartus;
